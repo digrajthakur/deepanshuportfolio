@@ -1,0 +1,1154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+nav {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li {
+    display: inline-block;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav .mainMenu li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .mainMenu li a:hover {
+    background-color: rgb(255, 94, 0);
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .closeMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .openMenu, .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: orange;
+}
+
+.fa-instagram:hover {
+    color: orange;
+}
+
+.fa-twitter:hover {
+    color: orange;
+}
+
+.fa-github:hover {
+    color: orange;
+}
+
+nav .logo {
+    margin: 6px;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+/* project */
+.project h1 {
+    color: white;
+    margin-top: 9rem;
+    margin-left: 39rem;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.project h2 {
+    color: white;
+    font-weight: lighter;
+    position: absolute;
+    margin-top: 13rem;
+    margin-left: 35rem;
+    font-size: 1.9rem;
+}
+
+.project img {
+    width: 100%;
+    height: 80vh;
+}
+
+
+
+@media only screen and (max-width: 1156px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        transition: top 1 ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+
+    }
+
+    nav .openMenu {
+        display: block;
+        font-size: 1.4rem;
+    }
+
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 94, 0);
+        font-size: 1.6rem;
+    }
+
+    .icons a {
+        color: white;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    nav .logo {
+        font-size: 1.3rem;
+        margin-top: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 376px) {
+
+    .project h1 {
+        color: white;
+        margin-top: 11rem;
+        margin-left: 5.5rem;
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+    .project h2 {
+        color: white;
+        font-weight: lighter;
+        margin-top: 13rem;
+        margin-left: 1.4rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .project h1 {
+        color: white;
+        margin-top: 11rem;
+        margin-left: 12rem;
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+    .project h2 {
+        color: white;
+        font-weight: lighter;
+        margin-top: 13rem;
+        margin-left: 9rem;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+    .project h1 {
+        color: white;
+        margin-top: 11rem;
+        margin-left: 5rem;
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+    .project h2 {
+        color: white;
+        font-weight: lighter;
+        margin-top: 13rem;
+        margin-left: 2rem;
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 970px) {
+
+    .project h1 {
+        color: white;
+        margin-top: 11rem;
+        margin-left: 26rem;
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+    .project h2 {
+        color: white;
+        font-weight: lighter;
+        margin-top: 13rem;
+        margin-left: 22rem;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (min-width: 482px) {
+    .project h1 {
+        color: white;
+        margin-top: 11rem;
+        margin-left: 12rem;
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+    .project h2 {
+        color: white;
+        font-weight: lighter;
+        margin-top: 13rem;
+        margin-left: 9rem;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 918px) {
+    .project h1 {
+        color: white;
+        margin-top: 11rem;
+        margin-left: 30rem;
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+    .project h2 {
+        color: white;
+        font-weight: lighter;
+        margin-top: 13rem;
+        margin-left: 26rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 918px) {
+    .project h1 {
+        color: white;
+        margin-top: 11rem;
+        margin-left: 35rem;
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 1.7rem;
+        font-weight: lighter;
+    }
+
+    .project h2 {
+        color: white;
+        font-weight: lighter;
+        margin-top: 13.5rem;
+        margin-left: 29rem;
+        font-size: 1.6rem;
+    }
+}
+
+/* para */
+
+.para p {
+    border: 1px solid black;
+    background-color: black;
+    color: wheat;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.first img {
+    width: 40%;
+    margin-left: 24rem;
+}
+
+.second img {
+    width: 40%;
+    margin-left: 24rem;
+}
+
+.third img {
+    width: 40%;
+    margin-left: 24rem;
+}
+
+.four img {
+    width: 40%;
+    margin-left: 24rem;
+}
+
+.five img {
+    width: 40%;
+    margin-left: 24rem;
+}
+
+.six img {
+    width: 40%;
+    margin-left: 24rem;
+}
+
+.seven img {
+    width: 40%;
+    margin-left: 24rem;
+}
+
+.eight img {
+    width: 40%;
+    margin-left: 24rem;
+}
+
+/* project1 */
+.first a {
+    text-decoration: none;
+}
+
+.first a p {
+    border: 1px solid black;
+    width: 8rem;
+    margin-left: 36rem;
+    margin-bottom: 1rem;
+    color: wheat;
+    background-color: black;
+    font-size: 2rem;
+}
+
+/* project2 */
+.second a {
+    text-decoration: none;
+}
+
+.second a p {
+    border: 1px solid black;
+    width: 8rem;
+    margin-left: 36rem;
+    margin-bottom: 1rem;
+    color: wheat;
+    background-color: black;
+    font-size: 2rem;
+}
+
+/* project3 */
+.third a {
+    text-decoration: none;
+}
+
+.third a p {
+    border: 1px solid black;
+    width: 8rem;
+    margin-left: 36rem;
+    margin-bottom: 1rem;
+    color: wheat;
+    background-color: black;
+    font-size: 2rem;
+}
+
+/* project4 */
+.four a {
+    text-decoration: none;
+}
+
+.four a p {
+    border: 1px solid black;
+    width: 8rem;
+    margin-left: 36rem;
+    margin-bottom: 1rem;
+    color: wheat;
+    background-color: black;
+    font-size: 2rem;
+}
+
+/* project5 */
+.five a {
+    text-decoration: none;
+}
+
+.five a p {
+    border: 1px solid black;
+    width: 8rem;
+    margin-left: 36rem;
+    margin-bottom: 1rem;
+    color: wheat;
+    background-color: black;
+    font-size: 2rem;
+}
+
+/* project6 */
+.six a {
+    text-decoration: none;
+}
+
+.six a p {
+    border: 1px solid black;
+    width: 8rem;
+    margin-left: 36rem;
+    margin-bottom: 1rem;
+    color: wheat;
+    background-color: black;
+    font-size: 2rem;
+}
+
+/* project7 */
+.seven a {
+    text-decoration: none;
+}
+
+.seven a p {
+    border: 1px solid black;
+    width: 8rem;
+    margin-left: 36rem;
+    margin-bottom: 1rem;
+    color: wheat;
+    background-color: black;
+    font-size: 2rem;
+}
+
+/* project8 */
+.eight a {
+    text-decoration: none;
+}
+
+.eight a p {
+    border: 1px solid black;
+    width: 8rem;
+    margin-left: 36rem;
+    margin-bottom: 1rem;
+    color: wheat;
+    background-color: black;
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 220px) and (max-width: 880px) {
+
+    .first img {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .second img {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .third img {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .four img {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .five img {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .six img {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .seven img {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .eight img {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+
+    /* project1 */
+    .first a {
+        text-decoration: none;
+    }
+
+    .first a p {
+
+        margin-left: 5.3rem;
+
+    }
+
+    /* project2 */
+    .second a {
+        text-decoration: none;
+    }
+
+    .second a p {
+
+        margin-left: 5.3rem;
+
+    }
+
+    /* project3 */
+    .third a {
+        text-decoration: none;
+    }
+
+    .third a p {
+
+        margin-left: 5.3rem;
+
+    }
+
+    /* project4 */
+    .four a {
+        text-decoration: none;
+    }
+
+    .four a p {
+
+        margin-left: 5.3rem;
+
+    }
+
+    /* project5 */
+    .five a {
+        text-decoration: none;
+    }
+
+    .five a p {
+
+        margin-left: 5.3rem;
+
+    }
+
+    /* project6 */
+    .six a {
+        text-decoration: none;
+    }
+
+    .six a p {
+
+        margin-left: 5.3rem;
+
+    }
+
+    /* project7 */
+    .seven a {
+        text-decoration: none;
+    }
+
+    .seven a p {
+        margin-left: 5.3rem;
+        margin-bottom: 1rem;
+
+    }
+
+    /* project8 */
+    .eight a {
+        text-decoration: none;
+    }
+
+    .eight a p {
+
+        margin-left: 5.3rem;
+
+    }
+}
+
+@media only screen and (min-width: 881px) {
+
+    .first img {
+        width: 80%;
+        margin-left: 9%;
+    }
+
+    .second img {
+        width: 80%;
+        margin-left: 9%;
+    }
+
+    .third img {
+        width: 80%;
+        margin-left: 9%;
+    }
+
+    .four img {
+        width: 80%;
+        margin-left: 9%;
+    }
+
+    .five img {
+        width: 80%;
+        margin-left: 9%;
+    }
+
+    .six img {
+        width: 80%;
+        margin-left: 9%;
+    }
+
+    .seven img {
+        width: 80%;
+        margin-left: 9%;
+    }
+
+    .eight img {
+        width: 80%;
+        margin-left: 9%;
+    }
+
+
+    /* project1 */
+    .first a {
+        text-decoration: none;
+    }
+
+    .first a p {
+        margin-left: 43rem;
+    }
+
+    /* project2 */
+    .second a {
+        text-decoration: none;
+    }
+
+    .second a p {
+
+        margin-left: 43rem;
+
+    }
+
+    /* project3 */
+    .third a {
+        text-decoration: none;
+    }
+
+    .third a p {
+
+        margin-left: 43rem;
+
+    }
+
+    /* project4 */
+    .four a {
+        text-decoration: none;
+    }
+
+    .four a p {
+
+        margin-left: 43rem;
+
+    }
+
+    /* project5 */
+    .five a {
+        text-decoration: none;
+    }
+
+    .five a p {
+
+        margin-left: 43rem;
+
+    }
+
+    /* project6 */
+    .six a {
+        text-decoration: none;
+    }
+
+    .six a p {
+
+        margin-left: 43rem;
+
+    }
+
+    /* project7 */
+    .seven a {
+        text-decoration: none;
+    }
+
+    .seven a p {
+        margin-left: 43rem;
+        /* margin-bottom: 1rem; */
+
+    }
+
+    /* project8 */
+    .eight a {
+        text-decoration: none;
+    }
+
+    .eight a p {
+
+        margin-left: 43rem;
+
+    }
+
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    border: 2px solid black;
+    width: 77rem;
+    margin-left: 1rem;
+    background-color: black;
+}
+
+.footer1 {
+    margin-left: 6rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer1 i {
+    font-size: 1rem;
+    color: wheat;
+}
+
+.footer1 a {
+    text-decoration: none;
+    color: rgb(194, 130, 11);
+}
+
+.connect {
+    color: wheat;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-left: 6rem;
+
+}
+
+/* contact */
+.connect1 {
+    text-align: center;
+    flex-direction: column;
+    margin-left: 12rem;
+}
+
+.connect1 i {
+    font-size: 1rem;
+    color: wheat;
+}
+
+.connect1 a {
+    text-decoration: none;
+    color: rgb(194, 130, 11);
+}
+
+hr {
+    color: wheat;
+    /* width: 8rem; */
+}
+
+.footer3 {
+    color: wheat;
+}
+
+.foot {
+    text-align: center;
+}
+
+.foot span {
+    color: black;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1156px) {
+
+    .footer1 p i {
+        font-size: 1.4rem;
+        margin-top: 3rem;
+    }
+
+    .footer1 p i a {
+        font-size: 1rem;
+        margin-left: 0.1rem;
+        margin-right: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        border: 2px solid black;
+        width: 35rem;
+        margin-left: 0rem;
+        flex-direction: column;
+        /* background-color: black; */
+    }
+
+    hr {
+        margin-top: 2rem;
+        width: 34rem;
+    }
+
+    .connect {
+        margin-top: 1rem;
+        margin-left: 5rem;
+        font-size: 2.6rem;
+    }
+
+    .connect1 i {
+        margin-top: 1rem;
+        margin-left: 0rem;
+        font-size: 1.4rem;
+    }
+
+    .connect1 a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: rgb(194, 130, 11);
+        margin-left: 1rem;
+        margin-right: 8rem;
+    }
+
+    .footer3 .foot a {
+        font-size: 1.6rem;
+        margin-right: 1rem;
+    }
+
+    .footer3 .foot span {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-right: 2rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 250px) and (max-width:500px) {
+
+    .footer1 p i {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    .footer1 p i a {
+        font-size: 0.6rem;
+        margin-left: 0rem;
+        margin-right: 5rem;
+    }
+
+    .footer {
+        /* display: flex; */
+        border: 2px solid black;
+        width: 18.5rem;
+        margin-left: 0rem;
+        flex-direction: column;
+        /* background-color: black; */
+    }
+
+    hr {
+        margin-top: 2rem;
+        width: 18rem;
+    }
+
+    .connect {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .connect1 i {
+        margin-top: 1rem;
+        margin-left: 0rem;
+        font-size: 1rem;
+    }
+
+    .connect1 a {
+        font-size: 0.6rem;
+        text-decoration: none;
+        color: rgb(194, 130, 11);
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .footer3 .foot a {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    .footer3 .foot span {
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-right: 2rem;
+    }
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 585px) {
+
+    .footer1 p i {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    .footer1 p i a {
+        font-size: 0.6rem;
+        margin-left: 0rem;
+        margin-right: 5rem;
+    }
+
+    .footer {
+        /* display: flex; */
+        border: 2px solid black;
+        width: 18.5rem;
+        margin-left: 0rem;
+        flex-direction: column;
+        /* background-color: black; */
+    }
+
+    hr {
+        margin-top: 2rem;
+        width: 18rem;
+    }
+
+    .connect {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .connect1 i {
+        margin-top: 1rem;
+        margin-left: 0rem;
+        font-size: 1rem;
+        /* position: absolute; */
+    }
+
+    .connect1 a {
+        font-size: 0.6rem;
+        text-decoration: none;
+        color: rgb(194, 130, 11);
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .footer3 .foot a {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    .footer3 .foot span {
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-right: 2rem;
+    }
+
+}
+
+@media only screen and (min-width: 365px) and (max-width: 380px) {
+    .footer {
+        width: 23rem;
+    }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 450px) {
+    .footer {
+        width: 23rem;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 500px) {
+    .footer {
+        width: 26rem;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+    .footer {
+        width: 32rem;
+    }
+}
+
+@media only screen and (min-width: 630px) and (max-width: 700px) {
+    .footer {
+        width: 40rem;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 785px) {
+    .footer {
+        width: 44rem;
+    }
+}
+
+@media only screen and (min-width: 784px) and (max-width: 850px) {
+    .footer {
+        width: 50rem;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 950px) {
+    .footer {
+        width: 54rem;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 923px) {
+    .footer {
+        width: 56rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 924px) and (max-width: 1000px) {
+    .footer {
+        width: 60rem;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1075px) {
+    .footer {
+        width: 65rem;
+    }
+}
+
+
+@media only screen and (min-width: 1075px) and (max-width: 1100px) {
+    .footer {
+        width: 67rem;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1156px) {
+    .footer {
+        width: 70rem;
+    }
+}
+
+
+@media only screen and (min-width: 250px) and (max-width: 270px) {
+    .footer {
+        width: 16rem;
+    }
+    .footer1 p i{
+        font-size: 1rem;
+    }
+    .footer1 p i a{
+        font-size: 0.48rem;
+    }
+    hr{
+        width: 15rem;
+    }
+    .connect1 i{
+        font-size: 1rem;
+        padding-right: 99.99rem;
+        
+    }
+    .connect1 i a{
+        font-size: 0.56rem;
+        margin-right: 1rem;
+    
+    }
+}
+
+
+@media only screen and (min-width: 270px) and (max-width: 290px) {
+    .footer {
+        width: 18rem;
+    }
+    .footer1 p i{
+        font-size: 1rem;
+    }
+    .footer1 p i a{
+        font-size: 0.48rem;
+    }
+    hr{
+        width: 15rem;
+    }
+    .connect1 i{
+        font-size: 1rem;
+        padding-right: 99.99rem;
+        
+    }
+    .connect1 i a{
+        font-size: 0.56rem;
+        margin-right: 1rem;
+    
+    }
+}
+
+
+@media only screen and (min-width: 327px) and (max-width: 361px) {
+    .footer {
+        width: 20.8rem;
+    }
+    .footer1 p i{
+        font-size: 1.4rem;
+    }
+    .footer1 p i a{
+        font-size: 0.7rem;
+    }
+    hr{
+        width: 20rem;
+    }
+    .connect1 i{
+        font-size: 1.4rem;
+        padding-right: 99.99rem;
+        
+    }
+    .connect1 i a{
+        font-size: 0.9rem;
+        margin-right: 1rem;
+    
+    }
+}

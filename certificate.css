@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.para {
+    border: 2px solid black;
+    text-align: center;
+    color: wheat;
+    background-color: black;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .para {
+
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+}
+
+.navbar {
+    border: 1px solid black;
+    margin-top: 4rem;
+    background-color: black;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.first a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.second a {
+    margin-top: 10rem;
+    text-decoration: none;
+    color: wheat;
+}
+
+.third a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.four a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.five a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.six a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.seven a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.eight a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.nine a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.ten a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.eleven a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.twelve a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.thirth a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.fourth a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.fiveth a {
+    text-decoration: none;
+    color: wheat;
+}

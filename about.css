@@ -1,0 +1,963 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+nav {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li {
+    display: inline-block;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav .mainMenu li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .mainMenu li a:hover {
+    background-color: rgb(255, 94, 0);
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .closeMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .openMenu, .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: orange;
+}
+
+.fa-instagram:hover {
+    color: orange;
+}
+
+.fa-twitter:hover {
+    color: orange;
+}
+
+.fa-github:hover {
+    color: orange;
+}
+
+nav .logo {
+    margin: 6px;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 886px) {
+    body {
+        position: absolute;
+        flex-direction: column;
+    }
+
+    nav .mainMenu {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        transition: top 1 ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 94, 0);
+        font-size: 1.6rem;
+    }
+
+    .icons a {
+        color: white;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+
+/* home */
+#home {
+    background-color: rgba(4, 4, 31, 0.811);
+    display: flex;
+}
+
+#home h3 {
+    color: wheat;
+    text-align: center;
+    position: absolute;
+    margin-left: 34rem;
+    font-size: 3rem;
+    font-family: cursive;
+    background-color: rgb(21, 21, 56);
+    border: 2px solid rgb(21, 21, 56);
+}
+
+#home img {
+    margin-top: 5rem;
+    margin-left: 2rem;
+    border-radius: 3rem;
+    width: 26rem;
+    height: 20rem;
+    margin-bottom: 4rem;
+    box-shadow: 0.2rem 0.2rem;
+}
+
+.box h2 {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    margin-top: 6rem;
+    color: white;
+    width: 42rem;
+}
+
+.box h4 {
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-family: cursive;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: wheat;
+    width: 42rem;
+}
+
+.box p {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 1rem;
+    color: white;
+    width: 42rem;
+}
+
+.box button {
+    margin-left: 20rem;
+    margin-top: 1rem;
+    width: 8rem;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+}
+
+.box button a {
+    color: wheat;
+    text-decoration: none;
+}
+
+
+/* skill */
+#skills .text1 {
+    width: 12rem;
+    color: wheat;
+    text-align: center;
+    margin-left: 34rem;
+    font-size: 3rem;
+    font-family: cursive;
+    background-color: rgb(21, 21, 56);
+    border: 2px solid rgb(21, 21, 56);
+}
+
+.skill {
+    background-color: black;
+    border: 2px solid black;
+    width: 48rem;
+    text-align: center;
+    margin-left: 15rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+.sk {
+    color: wheat;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.sk1 {
+    color: wheat;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 1rem;
+
+}
+
+.sk2 {
+    color: wheat;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+.sk3 {
+    color: wheat;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 1rem;
+
+}
+
+.sk4 {
+    color: wheat;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 1rem;
+
+}
+
+.sk5 {
+    color: wheat;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 1rem;
+
+}
+
+/* Experience */
+
+#exp h1 {
+    margin-top: 2rem;
+    margin-left: 28rem;
+    width: 24rem;
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+    font-family: cursive;
+    background-color: rgb(21, 21, 56);
+    border: 2px solid rgb(21, 21, 56);
+}
+
+
+.experience {
+    border: 1px solid wheat;
+    border-radius: 10px;
+    margin-top: 6%;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.exp-1 {
+    color: white;
+    text-align: center;
+}
+
+.exp-2 {
+    margin-top: 24px;
+}
+
+.head {
+    margin-top: 10px;
+    margin-left: 6px;
+    color: white;
+    background-color: black;
+}
+
+.head .intern {
+    font-family: cursive;
+
+}
+
+.head p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.head-1 {
+    margin-top: 24px;
+    margin-left: 6px;
+    color: white;
+    background-color: black;
+}
+
+.head-1 .intern-1 {
+    font-family: cursive;
+
+}
+
+.head-1 p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.head-2 {
+    margin-top: 24px;
+    margin-left: 6px;
+    color: white;
+    background-color: black;
+}
+
+.head-2 .intern-2 {
+    font-family: cursive;
+
+}
+
+.head-2 p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.head-3 {
+    margin-top: 24px;
+    margin-left: 6px;
+    color: white;
+    background-color: black;
+}
+
+.head-3 .intern-3 {
+    font-family: cursive;
+
+}
+
+.head-3 p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.head-4 {
+    margin-top: 24px;
+    margin-left: 6px;
+    color: white;
+    background-color: black;
+}
+
+.head-4 .intern-4 {
+    font-family: cursive;
+
+}
+
+.head-4 p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* contact1 */
+#contact1 .cont {
+    margin-top: 1rem;
+    margin-left: 28rem;
+    width: 24rem;
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+    font-family: cursive;
+    background-color: rgb(21, 21, 56);
+    border: 2px solid rgb(21, 21, 56);
+}
+
+#contact1 .cont span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 8rem;
+    display: flex;
+}
+
+.contact {
+    display: flex;
+    border: 2px solid black;
+    background-color: black;
+    width: 77rem;
+    height: 15rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.contact .word span {
+    color: wheat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-left: 4rem;
+    font-size: 1.6rem;
+    margin-top: 3.2rem;
+    position: absolute;
+}
+
+.contact .word p {
+    color: wheat;
+    width: 36rem;
+    margin-left: 4rem;
+    margin-top: 6.2rem;
+}
+
+.contact .word a {
+    text-decoration: none;
+}
+
+.form {
+    border: 2px solid black;
+    width: 37rem;
+    margin-top: 3rem;
+}
+
+.form .firstname {
+    width: 18rem;
+    height: 2.2rem;
+    margin-left: 0.2rem;
+}
+
+.form .lastname {
+    width: 18rem;
+    height: 2.2rem;
+}
+
+.form .email {
+    width: 18rem;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    height: 2.2rem;
+}
+
+.form .password {
+    width: 18rem;
+    height: 2.2rem;
+}
+
+.form .msg {
+    width: 36.3rem;
+    height: 2rem;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.form button {
+    width: 16rem;
+    height: 2.6rem;
+    margin-left: 0.2rem;
+    border-radius: 0.4rem;
+    color: orange;
+    font-size: 1.2rem;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    border: 2px solid black;
+    width: 77rem;
+    margin-left: 1rem;
+    background-color: black;
+}
+
+.footer1 {
+    margin-left: 6rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer1 i {
+    font-size: 1rem;
+    color: wheat;
+}
+
+.footer1 a {
+    text-decoration: none;
+    color: rgb(194, 130, 11);
+}
+
+.connect {
+    color: wheat;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-left: 6rem;
+
+}
+
+/* contact */
+.connect1 {
+    text-align: center;
+    flex-direction: column;
+    margin-left: 12rem;
+}
+
+.connect1 i {
+    font-size: 1rem;
+    color: wheat;
+}
+
+.connect1 a {
+    text-decoration: none;
+    color: rgb(194, 130, 11);
+}
+
+hr {
+    color: wheat;
+}
+
+.footer3 {
+    color: wheat;
+}
+
+.foot {
+    text-align: center;
+}
+
+.foot span {
+    color: black;
+}
+
+/* media query1  */
+
+@media only screen and (max-width: 1156px) {
+
+    .footer1 p i {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .footer1 p i a {
+        font-size: 1.6rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        border: 2px solid black;
+        width: 55rem;
+        margin-left: 1rem;
+        flex-direction: column;
+        background-color: black;
+    }
+
+    hr {
+        margin-top: 2rem;
+    }
+
+    .connect {
+        margin-top: 1rem;
+        margin-left: 5rem;
+        font-size: 3.6rem;
+    }
+
+    .connect1 i {
+        margin-top: 1rem;
+        margin-left: 0rem;
+        font-size: 2rem;
+    }
+
+    .connect1 a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: rgb(194, 130, 11);
+        margin-left: 1rem;
+        margin-right: 8rem;
+    }
+}
+
+
+@media only screen and (max-width: 1156px) {
+
+    /* about */
+
+    #home h3 {
+        margin-left: 19rem;
+    }
+
+    #home {
+        background-color: rgba(4, 4, 31, 0.811);
+        flex-direction: column;
+    }
+
+    #home img {
+        width: 50rem;
+        height: 33rem;
+        margin-top: 10rem;
+    }
+
+    .box h2 {
+        font-weight: lighter;
+        margin-left: 9rem;
+        font-size: 2.6rem;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 0rem;
+        color: white;
+
+    }
+
+    .box h4 {
+        margin-left: 15rem;
+        font-size: 3.1rem;
+        font-family: san;
+        font-weight: lighter;
+        color: wheat;
+    }
+
+    .box p {
+        margin-left: 9rem;
+        font-size: 2.6rem;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 1.3rem;
+        color: white;
+        width: 42rem;
+    }
+
+    .box button {
+        margin-left: 29rem;
+
+        margin-bottom: 3rem;
+        width: 14rem;
+        height: 5rem;
+        background-color: black;
+        color: white;
+        font-weight: 500;
+
+    }
+
+    .box button a {
+        color: wheat;
+        text-decoration: none;
+        font-size: 1.7rem;
+    }
+
+
+
+    /* skill */
+    #skills .text1 {
+        width: 16rem;
+        color: wheat;
+
+        margin-left: 21rem;
+        font-size: 3.2rem;
+        font-family: cursive;
+        background-color: rgb(21, 21, 56);
+        border: 2px solid rgb(21, 21, 56);
+    }
+
+    .skill {
+        background-color: black;
+        border: 2px solid black;
+        width: 52rem;
+        text-align: center;
+        margin-left: 3rem;
+        border-radius: 1rem;
+        margin-top: 3rem;
+    }
+
+    .sk {
+        color: wheat;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .sk1 {
+        color: wheat;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-top: 1rem;
+
+    }
+
+    .sk2 {
+        color: wheat;
+        font-weight: bold;
+        font-size: 2rem;
+
+    }
+
+    .sk3 {
+        color: wheat;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-top: 1rem;
+
+    }
+
+    .sk4 {
+        color: wheat;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-top: 1rem;
+
+    }
+
+    .sk5 {
+        color: wheat;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-top: 1rem;
+
+    }
+
+
+
+    /* Experience */
+
+    #exp h1 {
+
+        margin-left: 18rem;
+        width: 26rem;
+        color: wheat;
+        text-align: center;
+        font-size: 3rem;
+        font-family: cursive;
+        background-color: rgb(21, 21, 56);
+        border: 2px solid rgb(21, 21, 56);
+    }
+
+
+    .experience {
+        border: 1px solid wheat;
+        border-radius: 10px;
+        margin-top: 1rem;
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+
+
+
+    .head {
+        margin-top: 10px;
+        margin-left: 6px;
+        color: white;
+        font-size: 2.2rem;
+        background-color: black;
+    }
+
+    .head .intern {
+        font-family: san;
+
+    }
+
+    .head p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+
+    .head-1 {
+        margin-top: 24px;
+        margin-left: 6px;
+        color: white;
+        font-size: 2.2rem;
+        background-color: black;
+    }
+
+    .head-1 .intern-1 {
+        font-family: san;
+
+    }
+
+    .head-1 p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .head-2 {
+        margin-top: 24px;
+        margin-left: 6px;
+        color: white;
+        font-size: 2.1rem;
+        background-color: black;
+    }
+
+    .head-2 .intern-2 {
+        font-family: san;
+
+    }
+
+    .head-2 p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .head-3 {
+        margin-top: 24px;
+        margin-left: 6px;
+        color: white;
+        font-size: 2.2rem;
+        background-color: black;
+    }
+
+    .head-3 .intern-3 {
+        font-family: san;
+
+    }
+
+    .head-3 p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .head-4 {
+        margin-top: 24px;
+        margin-left: 6px;
+        color: white;
+        font-size: 2.2rem;
+        background-color: black;
+    }
+
+    .head-4 .intern-4 {
+        font-family: san;
+
+    }
+
+    .head-4 p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+
+    /* contact */
+
+    #contact1 .cont {
+        margin-top: 1rem;
+        margin-left: 14rem;
+        width: 29rem;
+        color: wheat;
+        text-align: center;
+        font-size: 3.9rem;
+        font-family: cursive;
+        background-color: rgb(21, 21, 56);
+        border: 2px solid rgb(21, 21, 56);
+    }
+
+    #contact1 .cont span {
+        color: white;
+        font-size: 2.6rem;
+        margin-left: 5rem;
+
+    }
+
+    .contact {
+        flex-direction: column;
+        border: 2px solid black;
+        background-color: black;
+        width: 54.9rem;
+        height: 69rem;
+
+    }
+
+    .contact .word span {
+        color: wheat;
+        font-family: san;
+        font-weight: lighter;
+        margin-left: 17rem;
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        font-size: 3.6rem;
+
+    }
+
+    .contact .word p {
+        color: wheat;
+        margin-left: 9rem;
+        margin-top: 6.2rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .contact .word a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: orange;
+    }
+
+    .form {
+        border: 2px solid black;
+        width: 39rem;
+        flex-direction: column;
+        margin-left: 10rem;
+    }
+
+    .form .firstname {
+        width: 18rem;
+        height: 2.3rem;
+        margin-left: 0.2rem;
+    }
+
+    .form .lastname {
+        width: 18rem;
+        height: 2.3rem;
+    }
+
+    .form .email {
+        width: 18rem;
+        margin-left: 0.2rem;
+        margin-top: 0.2rem;
+        height: 2.3rem;
+    }
+
+    .form .password {
+        width: 18rem;
+        height: 2.3rem;
+    }
+
+    .form .msg {
+        width: 36.3rem;
+        margin-left: 0.2rem;
+        margin-top: 0.2rem;
+        height: 2.3rem;
+    }
+
+    .form button {
+        width: 13rem;
+        height: 2.6rem;
+        margin-left: 0.2rem;
+        border-radius: 0.4rem;
+        color: black;
+        font-weight: bold;
+        font-size: 1.5rem;
+        background-color: orange;
+    }
+
+  
+    .footer3 .foot a {
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+
+    .footer3 .foot span {
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin-right: 2rem;
+    }
+
+}
+
